@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E771EFE4DA7C59B54079326 /* Pods_SMPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7025F521BCCC319E80B4AF /* Pods_SMPractice.framework */; };
 		ABCFCAA71F629CF500C8D4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFCAA61F629CF500C8D4D5 /* AppDelegate.swift */; };
 		ABCFCAA91F629CF500C8D4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFCAA81F629CF500C8D4D5 /* ViewController.swift */; };
 		ABCFCAAC1F629CF500C8D4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABCFCAAA1F629CF500C8D4D5 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38785EED465F3EB327D8AD14 /* Pods-SMPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMPractice/Pods-SMPractice.release.xcconfig"; sourceTree = "<group>"; };
+		45540EE47ABD9E0CA83F9471 /* Pods-SMPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMPractice/Pods-SMPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7025F521BCCC319E80B4AF /* Pods_SMPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SMPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCFCAA31F629CF500C8D4D5 /* SMPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCFCAA61F629CF500C8D4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABCFCAA81F629CF500C8D4D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E771EFE4DA7C59B54079326 /* Pods_SMPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		516BBBC76A406F7A043CE558 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45540EE47ABD9E0CA83F9471 /* Pods-SMPractice.debug.xcconfig */,
+				38785EED465F3EB327D8AD14 /* Pods-SMPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABCFCA9A1F629CF500C8D4D5 = {
 			isa = PBXGroup;
 			children = (
 				ABCFCAA51F629CF500C8D4D5 /* SMPractice */,
 				ABCFCAA41F629CF500C8D4D5 /* Products */,
+				516BBBC76A406F7A043CE558 /* Pods */,
+				FD620596F95634F6B17BB5B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = SMPractice;
 			sourceTree = "<group>";
 		};
+		FD620596F95634F6B17BB5B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7025F521BCCC319E80B4AF /* Pods_SMPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABCFCAB51F629CF500C8D4D5 /* Build configuration list for PBXNativeTarget "SMPractice" */;
 			buildPhases = (
+				BAAEBC480CD5A284A7B4074A /* [CP] Check Pods Manifest.lock */,
 				ABCFCA9F1F629CF500C8D4D5 /* Sources */,
 				ABCFCAA01F629CF500C8D4D5 /* Frameworks */,
 				ABCFCAA11F629CF500C8D4D5 /* Resources */,
+				0689523EEFED9DD41FB0A85B /* [CP] Embed Pods Frameworks */,
+				F3870264998EDDBFC2C70196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0689523EEFED9DD41FB0A85B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMPractice/Pods-SMPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAAEBC480CD5A284A7B4074A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SMPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3870264998EDDBFC2C70196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SMPractice/Pods-SMPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABCFCA9F1F629CF500C8D4D5 /* Sources */ = {
@@ -260,6 +338,7 @@
 		};
 		ABCFCAB61F629CF500C8D4D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45540EE47ABD9E0CA83F9471 /* Pods-SMPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMPractice/Info.plist;
@@ -272,6 +351,7 @@
 		};
 		ABCFCAB71F629CF500C8D4D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38785EED465F3EB327D8AD14 /* Pods-SMPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SMPractice/Info.plist;
